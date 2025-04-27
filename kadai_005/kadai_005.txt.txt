@@ -1,0 +1,52 @@
+macmini@macmininoMac-mini git_challenge % git init                                           
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+Initialized empty Git repository in /Volumes/SSD-2T/Terakoya/git__tr/git_challenge/.git/
+macmini@macmininoMac-mini git_challenge % echo "" >>hello_world.txt                          
+macmini@macmininoMac-mini git_challenge % git add hello_world.txt 
+macmini@macmininoMac-mini git_challenge % git commit -m "hello,world!"                 
+[master (root-commit) c8dc6ee] hello,world
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+macmini@macmininoMac-mini git_challenge % git status
+On branch master
+nothing to commit, working tree clean
+macmini@macmininoMac-mini git_challenge % git diff hello_world.txt 
+macmini@macmininoMac-mini git_challenge % git log
+commit c8dc6ee57918d39eb68929324719889ed9b18a74 (HEAD -> master)
+Author: w000nab0 <w000nab0@gmail.com>
+Date:   Sun Apr 27 19:58:41 2025 +0900
+
+    hello,world
+    
+    git status
+macmini@macmininoMac-mini git_challenge % git add hello_world.txt  
+macmini@macmininoMac-mini git_challenge % git commit -m "こんにちは、世界" 
+[master 529005e] こんにちは、世界
+ 1 file changed, 1 insertion(+)
+macmini@macmininoMac-mini git_challenge % git log                         
+commit 529005e788b49cf0e549ff1a7edbc4d4b9ab872e (HEAD -> master)
+Author: w000nab0 <w000nab0@gmail.com>
+Date:   Sun Apr 27 20:01:46 2025 +0900
+
+    こんにちは、世界
+
+commit c8dc6ee57918d39eb68929324719889ed9b18a74
+Author: w000nab0 <w000nab0@gmail.com>
+Date:   Sun Apr 27 19:58:41 2025 +0900
+
+    hello,world
+    
+    git status
+macmini@macmininoMac-mini git_challenge % git log --oneline
+529005e (HEAD -> master) こんにちは、世界
+c8dc6ee hello,world
+macmini@macmininoMac-mini git_challenge % 
